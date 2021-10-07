@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+const int N = 100;
+
+bool tachado[N+1];
+vector<int> prime;
+
+void primeSieve(){
+    for(long long i = 2; i < N; i++){
+        if(tachado[i] == false){
+            prime.push_back(i);
+            for(long long j = i+i; j < N; j+=i){
+                tachado[j] = 1;
+            }
+        }
+    }
+}
+
+int main(){
+    primeSieve();
+    for(auto i: prime){
+        cout << i << endl;
+    }
+}
