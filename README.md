@@ -73,8 +73,8 @@
  <br> Contributor 
 </td>
  <td> 
-<img src="https://github.com/tajenderkumar5 .png?size=100" height="100px" width="100px"><br> 
-<a href="https://github.com/tajenderkumar5 "> tajenderkumar5  </a>
+<img src="https://github.com/tajenderkumar5.png?size=100" height="100px" width="100px"><br> 
+<a href="https://github.com/tajenderkumar5"> tajenderkumar5  </a>
  <br> Contributor 
 </td>
   
