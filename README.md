@@ -43,4 +43,4 @@
   
   </table>
 
- ## *Dont forget to star this repo and <a href="https://github.com/Rajspeaks">follow me</a>!*
+ ## *Dont forget to star this repo and <a href="https://github.com/kumarnurav9811">follow me</a>!*
