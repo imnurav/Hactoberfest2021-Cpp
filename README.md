@@ -38,7 +38,36 @@
   </tr>
   
   
-  <td> <img src="https://github.com/the-artemis.png?size=100" height="100px" width="100px"><br> <a href="https://github.com/the-artemis"> the-artemis </a> <br> Contributor </td></tr>
+  <td> <img src="https://github.com/the-artemis.png?size=100" height="100px" width="100px"><br> <a href="https://github.com/the-artemis"> the-artemis </a> <br> Contributor </td>
+   <td> 
+<img src="https://github.com/AbhirupB.png?size=100" height="100px" width="100px"><br> 
+<a href="https://github.com/AbhirupB"> AbhirupB </a>
+ <br> Contributor 
+</td>
+
+ <td> 
+<img src="https://github.com/Tushar00728.png?size=100" height="100px" width="100px"><br> 
+<a href="https://github.com/Tushar00728"> Tushar00728  </a>
+ <br> Contributor 
+</td>
+
+
+
+
+ <td> 
+<img src="https://github.com/Juanes2424.png?size=100" height="100px" width="100px"><br> 
+<a href="https://github.com/Juanes2424"> Juanes2424 </a>
+ <br> Contributor 
+</td>
+  
+ <td> 
+<img src="https://github.com/Meghasinha234.png?size=100" height="100px" width="100px"><br> 
+<a href="https://github.com/Meghasinha234"> Meghasinha234 </a>
+ <br> Contributor 
+</td>
+
+</tr>
+
  
   
   </table>
