@@ -1,3 +1,6 @@
+#include<bits/stdc++.h>
+using namespace std;
+
 class Solution {
 public:
     double findMedianSortedArrays(vector<int>& A, vector<int>& B) {
@@ -40,3 +43,54 @@ public:
         return -1;
     }
 };
+
+int main()
+{
+    vector<int> A, B;
+    
+    int n1,n2;
+    
+    cout<<"Enter the Size of First Array : ";
+    cin>>n1;
+    
+    cout<<"Enter the Size of second Array : ";
+    cin>>n2;
+    
+    
+    cout<<"\nEnter the Elements of First Array \n";
+    for(int i = 0; i < n1; i++)
+    {
+        int t;
+        cin>>t;
+        A.push_back(t);
+    }
+    
+    cout<<"\nEnter the Elements of second Array \n";
+    for(int i = 0; i < n2; i++)
+    {
+        int t;
+        cin>>t;
+        B.push_back(t);
+    }
+    
+    sort(A.begin(), A.end());
+    
+    sort(B.begin(), B.end());
+    
+    cout<<"\nElements of first Array :- \n";
+    
+    for(int t : A)
+    cout<<t<<" ";
+    
+    cout<<"\nElements of second Array :- \n";
+    
+    for(int t : B)
+    cout<<t<<" ";
+    
+    Solution obj;
+    
+    double ans = obj.findMedianSortedArrays(A, B);
+    
+    cout<<"\nMedian of Two Sorted Arrays is :- "<<ans;
+    
+}
