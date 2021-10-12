@@ -8,49 +8,29 @@ using namespace std;
  */
 
 
-
 //  to find min or max 
 #define MIN(a,b) (((a)<(b)) ? a:b)
 #define MAX(a,b) (((a)>(b)) ? a:b)
 #define SQR(a)   ((a)*(a))
 
 
-
 //  can be used to store constants
 #define PI 3.14
 
 
-
-/* structure to build function from different file
-``````````````````````````````````````````````````*/
-#ifndef MYFUNCTION_H
-#define MYFUNCTION_H
-/*
-    Your function goes here...
-*/
-#endif
-/*`````````````````````````````````````````````````*/
-
-
-
 // merging operator
-#define MERGE(s1,s2)    cout<< s1##s2 << endl;
+// #define MERGE(s1)    printf("%s = %s",#s1,s1); // for c program
 
-
-
-// assert is used to check the condition as the program proceeds controlled by debug macro
-#define DEBUG 1
-
-#if( DEBUG == 1 )
-#define ASSERT( expression ) 				        \
-	cout << #expression << " ..." << num ;		    \
-	if( expression!= true) {				        \
-  		cout << " Failed in file: " << __FILE__ ;   \
-  		cout << " at line: " << __LINE__ << endl;	\
-	}							                    \
-	else cout << " Passed" << endl ;
-
-#elif( DEBUG == 0 )
-#define ASSERT( result )			        		\
-cout << "Number is " << num << endl ;
-#endif 
+int main() {
+    int number1=2,number2=4; // the inputs can also be float and double the macro will work the same for everyone
+    // cin >> number1 >> number2;
+	
+    cout << "\nMaximum of " << number1 << " and " << number2 << " is " << MAX(number1, number2);
+    cout << "\nMinimum of " << number1 << " and " << number2 << " is " << MIN(number1, number2);
+    cout << "\nSquare of "  << number1 << " is "  << SQR(number1);
+    cout << "\nArea of Circle of radius=" << number1 << " is " << PI*SQR(number1);
+    
+    // int pull_request = 100;          // for c program
+    // cout << MERGE(pull_request);     // for c program
+    return 0;
+}
