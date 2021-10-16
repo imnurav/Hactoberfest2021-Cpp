@@ -1,57 +1,35 @@
-package com.example.happybirthday;
+package com.example.unitconv;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
-    Button button;
-    TextView textView;
-    EditText editText;
+    private Button button;
+    private TextView textView;
+    private EditText editText;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         button = findViewById(R.id.button);
+        textView = findViewById(R.id.textView2);
         editText = findViewById(R.id.editText);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String s = editText.getText().toString();
+                int kg = Integer.parseInt(s);
+                double pound = 2.205*kg;
+                textView.setText("The corresponding value in pound is : " + pound);
+                Toast.makeText(MainActivity.this, "Thanks for using this app", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
-    public void Next(View view) {
-        String name = editText.getText().toString();
-//        if (name == "Ankita") {
-//            Intent intent = new Intent(this, MainActivity2.class);
-//            intent.putExtra(EXTRA_MESSAGE, name);
-//            startActivity(intent);
-//        }
-//            else if (name == "ankita") {
-//                Toast.makeText(this, "Enter Ankita", Toast.LENGTH_SHORT).show();
-//             }
-
-        switch (name) {
-            case "Ankita" :
-                Intent intent1 = new Intent(this, MainActivity2.class);
-                intent1.putExtra(EXTRA_MESSAGE, name);
-                startActivity(intent1);
-                break;
-
-            case "ankita":
-                Intent intent2 = new Intent(this, MainActivity2.class);
-                intent2.putExtra(EXTRA_MESSAGE, name);
-                startActivity(intent2);
-                break;
-
-            default:
-                Toast.makeText(this, "Enter Ankita", Toast.LENGTH_SHORT).show();
-                break;
-        }
-
-        }
-
-    }
+}
