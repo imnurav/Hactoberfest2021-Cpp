@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+#define f(i, a, b) for (int i = a, i < b, i++)
+#define vi vector<int>
+ 
+int main()
+{
+        long long int n;
+        cin >> n;
+        if (n == 1)
+        {
+            cout << 0 << " " << 1 << endl;
+        }
+        else
+            cout << -(n - 1) << " " << (n) << endl;
+    return 0;
+}
