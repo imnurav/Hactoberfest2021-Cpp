@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int jumpSearch(int arr[], int x, int n)
+{
+
+    int m = sqrt(n);
+    int i = 0;
+    while (arr[min(m, n) - 1] < x)
+    {
+        i = m;
+        m += sqrt(n);
+        if (i >= n)
+            return -1;
+    }
+    while (arr[i] < x)
+    {
+        i++;
+        if (i == min(m, n))
+            return -1;
+    }
+    if (arr[i] == x)
+        return i;
+
+    return -1;
+}
+
+int main() {
+    int n = 10;
+    int arr[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+    int x = 7;
+    int result = jumpSearch(arr, x, n);
+    if (result == -1) cout << "Element not found";
+    else cout << "Element found at index " << result;
+}
+//submitted by anushka nigam
