@@ -443,7 +443,7 @@ int main()
 using namespace std;
 
 
-//Q10 full pyramid
+//Q11 full pyramid
 /*      *
       * * *
     * * * * *
