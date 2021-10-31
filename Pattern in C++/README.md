@@ -18,3 +18,20 @@ problems.
 
 ## Alphabet Pattern
 ![Alphabet Pattern](./AlphabetPatternImg.png)
+
+
+##Hollow Star Pattern
+
+-------Hollow diamond in Square--------
+
+* * * * * * * * * * *
+* * * * *   * * * * *
+* * * *       * * * *
+* * *           * * *
+* *               * *
+*                   *
+* *               * *
+* * *           * * *
+* * * *       * * * *
+* * * * *   * * * * *
+* * * * * * * * * * *
