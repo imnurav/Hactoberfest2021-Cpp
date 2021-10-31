@@ -21,17 +21,5 @@ problems.
 
 
 ##Hollow Star Pattern
-
--------Hollow diamond in Square--------
-
-* * * * * * * * * * *
-* * * * *   * * * * *
-* * * *       * * * *
-* * *           * * *
-* *               * *
-*                   *
-* *               * *
-* * *           * * *
-* * * *       * * * *
-* * * * *   * * * * *
-* * * * * * * * * * *
+![hollow_diamond](https://user-images.githubusercontent.com/45908545/139586857-2a0e5aef-a98f-4190-98c3-78792500343f.png)
+     
