@@ -44,9 +44,12 @@ bool isArmstrong(int x)
 
 int main()
 {
-    int x = 407;
+    cout<<"Enter any number to check for armstrong : ";
+    cin>>x;
     cout << isArmstrong(x) << endl;
-    x = 1542;
-    cout << isArmstrong(x) << endl;
+    
+    cout<<"Enter another number to check for armstrong : ";
+    cin>>y;
+    cout << isArmstrong(y) << endl;
     return 0;
 }
